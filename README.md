@@ -1,6 +1,6 @@
 # Portafolio HTML - Módulo 2 Semana 1
 
-Este proyecto consiste en la creación de una página HTML tipo portafolio personal, siguiendo una estructura básica de presentación, habilidades y proyectos. Es parte del entrenamiento "Be a Codernnn".
+Este proyecto consiste en la creación de una página HTML tipo portafolio personal, siguiendo una estructura básica de presentación, habilidades y proyectos. Es parte del entrenamiento.
 
 ## Contenido del proyecto
 
