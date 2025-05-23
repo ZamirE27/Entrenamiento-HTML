@@ -1,22 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <center>
+    <link rel="stylesheet" href="CSS/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My personal Portafolio</title>
     <meta name="description" content="Personal portafolio of Zamir Estrada as a riwi developer.">
 
 </head>
-<body>
-    <h1>Zamir Estrada - Riwi developer</h1>
-    <section>
-        <h2>About me</h2>
-        <p>Hi, this is Zamir Estrada, I'm 23 years old, I am currently working for a US company as a Customer service representanive</p>
-        <p>Since I enrolled on this project in RIwi, I've been getting a lot of skills as a developer, I started without knowing nothing about it,<br>neverthless I'm enyoining the process and  the progress I've got </p>
-        <p>I made the decision to join in this project becuase I was looking for a complement, as I mentioned, I'm working for a US company<br>which means I am bilingual, so in order to keep growing professionally this was the better option, the one I found interesting and now <br>that I got certain knowledge, I found out a passion for Software development</p>
-    </section>
+<body >
+    <header class="header1">
+    <h1>Zamir Estrada - Riwi developer
+        <nav class="options">
+            <a href="#Aboutme">About me</a>
+            <a href="#Projects">Projects</a>
+            <a href="#ContactMe">Contact Me</a>
+        </nav>
+    </h1>
+    </header>
+<section id="Aboutme">
+    <h2>About me</h2>
+    <p>Hi, this is Zamir Estrada, I'm 23 years old, I am currently working for a US company as a Customer service representanive</p>
+    <p>Since I enrolled on this project in RIwi, I've been getting a lot of skills as a developer, I started without knowing nothing about it,<br>neverthless I'm enyoining the process and  the progress I've got </p>
+    <p>I made the decision to join in this project becuase I was looking for a complement, as I mentioned, I'm working for a US company<br>which means I am bilingual, so in order to keep growing professionally this was the better option, the one I found interesting and now <br>that I got certain knowledge, I found out a passion for Software development</p>
     <img src="Images/IMG_9507.jpg" width="350" alt="Zamir Estradas's photo">
+</section>
     <br><br>
+<hr>
+<section>
     <table border="2">
         <tr>
             <th>Skills</th>
@@ -25,7 +37,7 @@
         <tr>
             <td>Leadership</td>
             <td>Python</td>
-            
+
         </tr>
         <tr>
             <td>sales skills</td>
@@ -44,30 +56,35 @@
             <td></td>
         </tr>
     </table>
-    <section>
-        <h2>Projects</h2>
-        <h3>Project 1: Calculate the total cost of a purchase in a store </h3>
-        <p>This was the first project I've made in python where we calculate the total cost of a purchase in a store,<br>We used simple conditionals and nested conditionals so we could make some validations </p>
-        <br>
-        <h3>Project 2: Grades validation </h3>
-        <p>Here we were requested to create a code that would vali multiple notes meeting the requested requirements and features.<br>to achieve this we used loops(For and while) and conditionals </p>
-        <br>
-        <h3>Project 3: Inventories management (CRUD) </h3>
-        <p>I developed a Python program that efficiently manages a store's product inventory by applying parameterized functions,<br>lambda functions, and data structures such as lists, tuples, and dictionaries. </p>
-        <br>
-        <h3>Project 4: </h3>
-        <p>This iis my first project I've made in python where we calculate the total cost of a purchase in a store</p>
-    </section>
+</section>
+<hr>
+<section id="Projects">
+    <h2>Projects</h2>
+    <h3>Project 1: Calculate the total cost of a purchase in a store </h3>
+    <p>This was the first project I've made in python where we calculate the total cost of a purchase in a store,<br>We used simple conditionals and nested conditionals so we could make some validations </p>
+    <br>
+    <h3>Project 2: Grades validation </h3>
+    <p>Here we were requested to create a code that would valid multiple notes meeting the requested requirements and features.<br>to achieve this we used loops(For and while) and conditionals </p>
+    <br>
+    <h3>Project 3: Inventories management (CRUD) </h3>
+    <p>I developed a Python program that efficiently manages a store's product inventory by applying parameterized functions,<br>lambda functions, and data structures such as lists, tuples, and dictionaries. </p>
+    <br>
+    <h3>Project 4: My portafolio </h3>
+    <p>We have started the HTML and CSS module, so as our first exercise we were asked to create a portfolio, using HTML base tags and giving semantics to the code.  </p>
     <br>
     <h3>Inventories management project code's picture</h3>
     <img src="Images/image0.jpeg"  width="350" height="350" alt="Inventories management's picture">
     <br><br>
+
     <table border="2">
+    <thead>
         <tr>
             <th>Projects made</th>
             <th>Technologies used</th>
             <th>Links</th>
         </tr>
+    </thead>
+    <tbody>
         <tr>
             <td>Calculate the total cost of a purchase in a store</td>
             <td>Python</td>
@@ -86,10 +103,33 @@
         <tr>
             <td>My portafolio</td>
             <td>Html</td>
-            <td><a href="https://github.com/ZamirE27/RiwiEJS1M1Zamir" target="_blank">View project</a></td>
+            <td><a href="https://github.com/ZamirE27/Entrenamiento-HTML.git" target="_blank">View project</a></td>
         </tr>
-        
+    </tbody>
     </table>
-    
+</section>
+<br><hr>
+<section id="ContactMe">
+    <h2>Contact me</h2>
+    <form action="/send" method="POST">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Introduce your name" required>
+    <br>
+    <label for="email">Email</label>
+    <input type="email" id="email" email="email" placeholder="Introduce your email" required>
+    <br>
+    <label for="message">Message</label><br>
+    <textarea type="message" id="message" message="message" placeholder="Introduce the subject" rows="4" required></textarea>
+    <br>
+    <input type="submit" value="Send">
+    </form>
+</section>
+<br>
+<footer class="footer">
+    <h3>My social media </h3>
+    <a href="https://www.linkedin.com/in/zamir-estrada-947b61255?utm_source=share&utm_campaing=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><button type="button">Linkedin</button></a>
+    <a href="https://github.com/ZamirE27" target="_blank"><button type="button">Github</button></a>
+</footer>
+</center>
 </body>
-</html>     
+</html>
